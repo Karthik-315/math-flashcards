@@ -1,0 +1,12 @@
+{% extends 'math_template.html' %}
+
+{% block 'math_block' %}
+    <h3>
+        <img src="static/images/{{num1}}.png" alt="Failed to load image." style="height: 12%;width: 12%;">
+        X
+        <img src="static/images/{{num2}}.png" alt="Failed to load image." style="height: 12%;width: 12%;">
+    </h3>
+    <br/><br/>
+
+    <form action="multiplication" method="post" >
+{% endblock %}

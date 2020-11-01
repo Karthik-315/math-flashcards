@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block 'page_content'%}
+    <div id="centeringDiv" style="text-align:center; vertical-align:middle">
+        <form id="mainForm" action="login" method="post">
+            {% csrf_token %}
+            <h2 style="text-align: center;">Enter Your Details</h2>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="User name">
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-6">
+                    <input type="email" class="form-control" placeholder="E-Mail Address">
+                </div>
+            </div>
+            <br><br>
+
+            <div class="row">
+                <div class="col" style="display: flex; justify-content: center;">
+                    <button type="submit" class="btn btn-outline-success btn-lg" style="width: 50%;">Register</button>
+                </div>
+                <div class="col" style="display: flex; justify-content: center;">
+                    <button type="reset" class="btn btn-secondary btn-lg" style="width: 50%;">Reset</button>
+                </div>
+            </div>   
+            
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block 'page_content'%}
+
+    <form action="app_page" method="POST">
+
+        {% csrf_token %}
+
+        <div class="form-group">
+            <h3 style="text-align: center;">Hi! Input your name to get started</h3><br>
+            <label for="formGroupExampleInput">Username: </label>
+            <input type="text" class="form-control" name="username" placeholder="Username">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your username with anyone else.</small>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Proceed</button>
+    </form>
+{% endblock %}
